@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_create_account"
+        style="@style/bold_20_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Create Account" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/login_create_account">
+
+        <TextView
+            android:id="@+id/login_title"
+            style="@style/bold_20_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Login Form" />
+
+        <EditText
+            android:id="@+id/login_email"
+            style="@style/regular_18_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_title"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_border"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            style="@style/regular_18_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_email"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/bold_20_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/login_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Login"
+            android:textAllCaps="false"
+            app:backgroundTint="@null" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
